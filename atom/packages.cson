@@ -1,10 +1,10 @@
 packages: [
   "activate-power-mode"
-  "an-color-picker"
   "atom-beautify"
   "AtomicChar"
   "autoclose-html"
   "code-peek"
+  "color-picker"
   "convert-to-utf8"
   "emmet"
   "highlight-selected"
