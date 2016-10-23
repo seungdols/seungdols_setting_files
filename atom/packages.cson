@@ -7,6 +7,8 @@ packages: [
   "color-picker"
   "convert-to-utf8"
   "emmet"
+  "git-plus"
+  "git-status"
   "highlight-selected"
   "linter"
   "linter-pep8"
