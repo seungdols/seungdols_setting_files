@@ -1,0 +1,13 @@
+-Xms2g
+-Xmx2g
+-XX:ReservedCodeCacheSize=1040m
+-XX:+UseCompressedOops
+-XX:+UseG1GC
+-XX:SoftRefLRUPolicyMSPerMB=50
+-ea
+-Dsun.io.useCanonCaches=false
+-Djava.net.preferIPv4Stack=true
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:-OmitStackTraceInFastThrow
+-Dfile.encoding=UTF-8
+-Duser.name=seungdols
