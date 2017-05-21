@@ -1,0 +1,86 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'kien/ctrlp.vim'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'junegunn/fzf'
+Plugin 'powerline/powerline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/syntastic'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'dracula/vim'
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+
+" Put your non-Plugin stuff after this line
+set number
+set ts=4
+set shiftwidth=4
+set cindent
+set number
+set ai
+set si
+set nocompatible
+set history=1000
+set ruler
+set fileencoding=utf-8
+set encoding=utf-8
+set fencs=utf-8,euc-kr,cp949,cp932,euc-jp,shift-jis,big5
+set title
+set showmatch
+set wmnu
+set hlsearch
+set ignorecase
+" set background=dark
+set enc=UTF-8
+set backspace=indent,eol,start
+set showcmd
+set paste
+syntax on
+
+set laststatus=2
+set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\
+set t_Co=256
+
+"language en_US.UTF-8
+"let g:Powerline_symbols = 'fancy'
+"set laststatus=2
+
+" airline setting
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+"let g:airline_left_sep = '»'
+"let g:airline_left_sep = '▶'
+"let g:airline_right_sep = '«'
+"let g:airline_right_sep = '◀'
+"let g:airline_symbols.linenr = '␊'
+"let g:airline_symbols.linenr = '␤'
+"let g:airline_symbols.linenr = '¶'
+"let g:airline_symbols.branch = '⎇'
+"let g:airline_symbols.paste = 'ρ'
+"let g:airline_symbols.paste = 'Þ'
+"let g:airline_symbols.paste = '∥'
+"let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_theme='powerlineish'
+
+" color jellybeans
+" color solarized8_dark
+" color dracula 
